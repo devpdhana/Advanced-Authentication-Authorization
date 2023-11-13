@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import {Typography} from '@mui/material'
 
 axios.defaults.withCredentials = true
 let firstRender = true
@@ -38,8 +39,10 @@ const Welcome = () => {
     // }
     },[firstRender])
   return (
-    <div>Welcome{user && user.name}</div>
-  )
+    <div>
+      <Typography variant="h3"> Welcome {user && user.name} </Typography>
+    </div>
+  );
 }
 
 export default Welcome

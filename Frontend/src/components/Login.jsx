@@ -43,7 +43,7 @@ const Login = ({ isLoggedin, setIsLoggedin }) => {
           justifyContent={"center"}
           alignItems={"center"}
         >
-          <Typography variant="h2">Signup</Typography>
+          <Typography variant="h2">Login</Typography>
           <TextField
             name="email"
             value={inputs.email}
@@ -63,7 +63,7 @@ const Login = ({ isLoggedin, setIsLoggedin }) => {
             margin="normal"
           />
           <Button variant="contained" type="submit">
-            Signup
+            Login
           </Button>
         </Box>
       </form>
